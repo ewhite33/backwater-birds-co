@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component'; // Import the main app component
 import { AppRoutingModule } from './app-routing.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule, // Import the routing module
     // Import other Angular modules here as needed
   ],
-  providers: [], // Add any services or providers
+  providers: [
+    provideAnimationsAsync()
+  ], // Add any services or providers
   bootstrap: [AppComponent] // Bootstrap the main app component
 })
 export class AppModule {}
