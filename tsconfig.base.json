@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@backwater-birds-co-app/feature/account": [
+        "libs/feature/account/src/index.ts"
+      ],
+      "@backwater-birds-co-app/feature/header": [
+        "libs/feature/header/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
