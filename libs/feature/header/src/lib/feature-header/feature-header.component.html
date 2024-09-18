@@ -1,3 +1,38 @@
-<mat-toolbar color="primary">
-    Backwater Birds Co.
-</mat-toolbar>
+<mat-toolbar>
+    <section class="header">
+      <a class="logo" href="#">
+        Backwater Birds Co.
+      </a>
+  
+      <nav>
+        <!-- Add [ngClass] to apply 'active' class when drawerOpen is true -->
+        <button mat-button (mouseenter)="openDrawer()" (mouseleave)="closeDrawer()" [ngClass]="{'active': drawerOpen}">
+          Shop
+        </button>
+      </nav>
+  
+      <!-- Drawer content below header -->
+      <div class="drawer-content" #drawerDiv (mouseenter)="openDrawer()" (mouseleave)="closeDrawer()">
+        <ul>
+          <li>New</li>
+          <li>Decoys</li>
+          <li>Blinds</li>
+          <li>Bags</li>
+          <li>Logo Gear</li>
+          <li>Hunt Dog</li>
+          <li>Accessories</li>
+        </ul>
+      </div>
+  
+      <section class="actions">
+        <button mat-icon-button aria-label="Shopping">
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+  
+        <button mat-icon-button aria-label="Account">
+          <mat-icon>person</mat-icon>
+        </button>
+      </section>
+    </section>
+  </mat-toolbar>
+  

@@ -20,7 +20,8 @@
       ],
       "@backwater-birds-co-app/feature/header": [
         "libs/feature/header/src/index.ts"
-      ]
+      ],
+      "@backwater-birds-co-app/ui/styles": ["libs/ui/styles/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
