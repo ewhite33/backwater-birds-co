@@ -9,6 +9,18 @@ export class FeatureHeaderComponent {
   @ViewChild('drawerDiv') drawerDiv!: ElementRef;
   drawerOpen = false; // Track whether the drawer is open
 
+  // Define routes array with path and label
+  routes = [
+    { path: './logo-gear', label: 'Logo Gear' },
+    { path: './hunt-dog', label: 'Hunt Dog' },
+    { path: './decoys', label: 'Decoys' },
+    { path: './blinds', label: 'Blinds' },
+    { path: './bags', label: 'Bags' },
+    { path: './accessories', label: 'Accessories' }
+  ];
+
+  constructor() {}
+
   openDrawer() {
     this.drawerDiv.nativeElement.style.display = 'flex'; // Show the drawer when hovered
     this.drawerOpen = true; // Mark the drawer as open
