@@ -16,7 +16,7 @@ import { FeatureHeaderModule } from '@backwater-birds-co-app/feature/header';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    FeatureHeaderModule
+    FeatureHeaderModule,
   ],
   providers: [
     provideAnimationsAsync()

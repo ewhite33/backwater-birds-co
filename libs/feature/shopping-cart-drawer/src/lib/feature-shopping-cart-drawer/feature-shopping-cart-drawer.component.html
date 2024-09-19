@@ -1,0 +1,19 @@
+<mat-drawer-container
+  #drawerContainer
+  class="shopping-cart-container"
+  [hasBackdrop]="true"
+  (backdropClick)="closeDrawer()"
+  [ngClass]="{'drawer-open': drawer.opened}">
+  <mat-drawer #drawer mode="side" position="end" (closedStart)="closeDrawer()">
+    <button mat-icon-button class="close-button" (click)="closeDrawer()">
+      <mat-icon>close</mat-icon>
+    </button>
+
+    <!-- Drawer content goes here -->
+  </mat-drawer>
+</mat-drawer-container>
+
+<!-- Static button for opening the drawer -->
+<button mat-icon-button class="open-drawer-button" aria-label="Shopping" (click)="openDrawer()">
+  <mat-icon>shopping_cart</mat-icon>
+</button>

@@ -1,0 +1,53 @@
+@import 'libs/ui/styles/src/lib/_backwater-birds-co-utils.scss';
+
+:host {
+    .shopping-cart-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2000; /* Base z-index for the container */
+  
+      &.drawer-open {
+        height: 100vh;
+        width: 100vw;
+        pointer-events: auto; /* Enable interactions when the drawer is open */
+      }
+  
+      .mat-drawer-backdrop {
+        background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent backdrop */
+      }
+  
+      mat-drawer {
+        width: 300px;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        z-index: 2001; /* Drawer should be above the backdrop */
+  
+        .close-button {
+          margin: 10px;
+          align-self: flex-end;
+          color: $black;
+          cursor: pointer;
+        }
+      }
+    }
+  
+
+    .open-drawer-button {
+      position: absolute;
+      right: 60px;
+
+      &:hover {
+        color: $highlight;
+        cursor: pointer;
+      }
+
+      mat-icon {
+        height: unset;
+        width: unset;
+        font-size: 40px;
+      }
+    }
+  }
+  
