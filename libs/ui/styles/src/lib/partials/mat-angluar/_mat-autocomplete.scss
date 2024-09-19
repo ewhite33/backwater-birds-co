@@ -1,0 +1,19 @@
+html {
+    --mdc-outlined-text-field-caret-color: #{$highlight};
+    --mdc-outlined-text-field-focus-outline-color: #{$highlight};
+}
+
+.mat-mdc-form-field-flex,
+.mat-mdc-text-field-wrapper {
+    height: 50px !important;
+}
+
+.mat-mdc-form-field-icon-prefix {
+    width: 40px;
+    padding: 0 !important;
+}
+
+.mat-mdc-form-field-infix {
+    top: 5px;
+    padding: 0 !important;
+}

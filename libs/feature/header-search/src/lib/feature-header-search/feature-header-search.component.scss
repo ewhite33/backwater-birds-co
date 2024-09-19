@@ -1,0 +1,27 @@
+@import 'libs/ui/styles/src/lib/_backwater-birds-co-utils.scss';
+
+:host {
+    .search-field {
+      width: 70%;
+      margin: 15px 30px 0px 30px;
+      border-radius: 50px; /* Rounded borders */
+      
+      mat-form-field {
+        border-radius: 25px; /* Apply rounded corners to the input */
+        background-color: white;
+        .mat-form-field-wrapper {
+          border-radius: 25px;
+        }
+      }
+  
+      input {
+        padding: 8px 12px;
+        border-radius: 25px;
+      }
+  
+      mat-icon {
+        color: $white; /* Adjust color as needed */
+      }
+    }
+  }
+  

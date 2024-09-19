@@ -24,6 +24,9 @@
       "@backwater-birds-co-app/feature/header-drawer": [
         "libs/feature/header-drawer/src/index.ts"
       ],
+      "@backwater-birds-co-app/feature/header-search": [
+        "libs/feature/header-search/src/index.ts"
+      ],
       "@backwater-birds-co-app/feature/shopping-cart-drawer": [
         "libs/feature/shopping-cart-drawer/src/index.ts"
       ],
