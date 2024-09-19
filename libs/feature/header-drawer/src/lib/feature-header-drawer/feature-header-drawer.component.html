@@ -1,0 +1,13 @@
+<nav class="shop-button">
+<!-- Add [ngClass] to apply 'active' class when drawerOpen is true -->
+    <button mat-button (mouseenter)="openDrawer()" (mouseleave)="closeDrawer()" [ngClass]="{'active': drawerOpen}">
+        Shop
+    </button>
+</nav>
+
+<!-- Drawer content below header -->
+<div class="drawer-content" #drawerDiv (mouseenter)="openDrawer()" (mouseleave)="closeDrawer()">
+    <ul>
+        <li *ngFor="let route of routes" [routerLink]="[route.path]" routerLinkActive="router-link-active">{{ route.label }}</li>
+    </ul>
+</div>

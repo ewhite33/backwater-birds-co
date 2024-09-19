@@ -16,67 +16,9 @@
       padding-left: 20px;
     }
 
-    .shop-button {
-      height: 100%;
-      margin-left: 5%;
-    }
-
-    /* Style for the button */
-    button[mat-button] {
-      height: 100%;
-      width: 125px;
-      background-color: transparent;
-      color: $white;
-      font-size: 20px;
-      border-right: 1px solid $grey;
-      border-left: 1px solid $grey;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-
-      &:hover,
-      &.active { /* Apply hover styles when 'active' class is present */
-        color: $highlight; /* Highlight color */
-        background-color: $secondary;
-        border-bottom: 5px solid $highlight;
-      }
-    }
-
-    /* Drawer container styling */
-    .drawer-content {
-      display: none; /* Hidden initially */
-      position: absolute;
-      top: 100%; /* Positioned directly below the header */
-      left: -16px;
-      width: 100vw; /* Full width of the header */
-      background-color: $secondary;
-      z-index: 10;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a cleaner look */
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center; /* Center the dropdown items */
-        width: 100%; /* Ensure items span the full width */
-
-        li {
-          padding: 16px 40px;
-          font-size: 16px;
-          color: $white;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-
-          a {
-            text-decoration: none !important;
-          }
-
-          &:hover {
-            background-color: $highlight; /* Highlight color on hover */
-            color: $black;
-          }
-        }
-      }
+    .drawer {
+        height: 100%;
+        margin-left: 5%;
     }
 
     .actions {
